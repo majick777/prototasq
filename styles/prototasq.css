@@ -1,0 +1,144 @@
+/* Fonts */
+@font-face {font-family:'Avenir Next'; src: url(avenir-next-regular.woff2) format("woff2");}
+@font-face {font-family:'Avenir Next Bold'; font-weight:600; src: url(avenir-next-demi.woff2) format("woff2");}
+
+/* General */
+#pt-interface, .pt-new-record, .pt-input, .pt-update-response, .pt-form-wrapper {font-family:'Avenir Next'; font-size:14px;}
+.pt-inline {display:inline-block; vertical-align:middle;}
+.pt-button-cell {width:60px; text-align:center;} .pt-button-label {font-size:11px; color:#0073aa;}
+.pt-new-record {background-color:#F0F8FF; padding:20px;}
+
+/* Info Tab */
+#pt-header-info {margin-bottom:10px;}
+.pt-info-tagline {font-style:italic; font-weight:bold; color:#777;}
+.pt-subheading {font-size: 15px; font-weight: bold;}
+#pt-quickstart {margin-top:20px;} #pt-quickadd-header {font-weight:bold;}
+.pt-info-list {font-size:12px;}
+.pt-info-list-item {margin-top: 3px; margin-bottom: 3px;}
+#pt-logo-wrap, #pt-quickadd-buttons, #pt-info-tab-content {
+	display:inline-block; float:left; overflow-y:auto; max-height:250px; margin-left:10px; margin-right:30px;
+}
+#pt-info-tab-content {width:400px;}
+#pt-select-info-wrap {max-height:250px; overflow-y:hidden;}
+.pt-add-label {min-width: 130px; height:35px; line-height: 35px;}
+#pt-quickstart-link {text-decoration:none;} #pt-quickstart-link:hover {text-decoration:underline;}
+
+/* Menus */
+#pt-domain-menu {margin-bottom:0px; padding-left:0px;}
+.pt-main-menu-item, .pt-menu-inline  {list-style:none; display:inline-block;}
+#pt-main-heading .pt-domain-menu-heading {color:#0000EE;}
+#pt-menu-tab-colony .pt-domain-menu-heading, #pt-header-colony {color:#366FC8;}
+#pt-menu-tab-project .pt-domain-menu-heading, #pt-header-project {color:#9B0DB7;}
+#pt-menu-tab-task .pt-domain-menu-heading, #pt-header-task {color:#C80D46; margin-left:-1px;}
+#pt-menu-tab-message .pt-domain-menu-heading, #pt-header-message {color:#C6630D;}
+.pt-letter {background-image:url('../images/letters.png'); width:25px; height:25px;}
+.pt-letter-c {background-position:0px 0px;} .pt-letter-c:hover {background-position:0px 25x;}
+.pt-letter-p {background-position:-25px 0px;} .pt-letter-p:hover {background-position:-25px 25x;}
+.pt-letter-t {background-position:-50px 0px;} .pt-letter-t:hover {background-position:-50px 25x;}
+.pt-letter-m {background-position:-75px 0px;} .pt-letter-m:hover {background-position:-75px 25x;}
+.pt-main-header {
+	color:#000; font-size:18px; font-family:'Avenir Next Bold'; padding: 5px 0px; margin:0px 10px;
+	width:70px; border-top: 1px solid transparent; border-bottom: 1px solid transparent;
+}
+.pt-menu-item-spacer {float:left; width:20px; height:46px; border-bottom:1px solid #000; margin-bottom:0px;}
+.pt-menu-item-space {float:left; width:10px; height:46px; border-bottom:1px solid transparent; margin-bottom:0px;}
+.pt-menu-item-inactive {border-bottom:1px solid #000; border-left:1px solid #AAA; border-right:1px solid #AAA; border-top:1px solid #AAA;}
+.pt-menu-item-active {background-color:#E9FFFF !important; border-bottom:1px solid transparent; border-left:1px solid #000; border-right:1px solid #000; border-top:1px solid #000;}
+#pt-select-info {border-radius:0 10px 10px 10px;}
+.pt-domain-menu-item {float:left; margin-bottom:0px; padding: 10px 15px 5px 15px; background-color:#F0FFFF; border-radius:10px 10px 0 0;}
+.pt-domain-menu-item:hover {background-color:#E0FFFF;}
+.pt-domain-menu-heading {
+	color:#0000BB; font-size:18px; font-family:'Avenir Next Bold'; padding: 5px 0px; margin:0px 10px 0 0;
+	border-top: 1px solid transparent; border-bottom: 1px solid transparent;
+}
+.pt-domain-menu-heading:hover {color:#0000EE; border-bottom: 1px solid #0000BB; border-top: 1px solid #0000BB;}
+.pt-item-count {
+    vertical-align: top; border-radius: 11px; background-color: #2DD0C9; padding: 2px 7px;    
+    color: #FFF ;font-family: "Consolas"; font-size:14px; font-weight: bold; line-height: 20px;
+}
+.pt-add-button.pt-menu-button {margin-top: -5px;}
+
+/* Lists */
+.pt-list, .pt-list-item {list-style:none; display: block; clear: both;}
+.pt-select-list .pt-selection-wrapper {padding-left:0px;}
+.pt-select-list {
+	background-color:#E9FFFF; padding:20px; border-radius:0 10px 10px 10px; border:1px solid #000; 
+	min-height:125px; max-height:250px; overflow-y:auto; 
+}
+.pt-select-list h3 {margin-top:0px;}
+.pt-checkboxes-list {overflow-y:auto; margin-top:-10px; max-height:300px; max-width:350px;}
+.pt-list-item-link {margin-left:5px; text-decoration:none; padding-top:2px; padding-bottom:2px;}
+.pt-list-item-link:hover {border-top:1px solid #0073aa; border-bottom:1px solid #0073aa;}
+.pt-list-item-link-all {font-weight:bold;}
+.pt-list-item .pt-checkbox {float:left; display:inline-block;}
+.pt-list-item-link-div, .pt-list-item-status, .pt-list-item-parent, .pt-list-item-grandparent {
+	float:left; display:inline-block; height:30px; line-height:20px; width:100px; margin-top:-5px;
+}
+.pt-filter-wrapper, .pt-selection-wrapper, .pt-filters-list {
+	float: left; display:inline-block; max-height:250px; overflow-y:auto; padding:0 20px 20px 20px;
+}
+.pt-filter-header {margin-top: 0;}
+
+/* Inputs */
+.pt-thickbox-header {margin-top:5px; margin-bottom: 30px;}
+.pt-input, .pt-input-label {font-size:16px;}
+.pt-input-label {vertical-align:top; padding-top:5px;}
+.pt-input-title, .pt-input-description, .pt-input-content {width:400px;}
+.pt-input.pt-input-title {font-family: 'Avenir Next'; font-size:16px;}
+.pt-input-description {font-size:15px;} .pt-input-content {font-size:14px;}
+select.pt-input-select {font-size:16px; padding: 2px 5px; min-width:130px; text-align:right; height:30px;}
+.pt-submit, .pt-add-new-button {border-radius:7px; padding: 4px 8px; color:#EEE; background-color:#0AAAAA; border:1px solid #777;}
+.pt-submit:hover, .pt-add-new-button:hover {color:#FFF; background-color:#0BBBBB; border:1px solid #AAA;}
+.pt-cancel {border-radius:7px; padding: 4px 8px; color:#EEE; background-color:#AAAAAA; border:1px solid #777;}
+.pt-cancel:hover {color:#FFF; background-color:#BBBBBB; border:1px solid #AAA;}
+
+/* Task Table */
+#pt-task-table {width:100%; background-color:#E9FFFF; border-radius:10px; border:1px solid #000;}
+.pt-column {text-align:center; font-weight:bold;}
+.pt-column-menu {margin:0 auto; border-collapse:collapse; /* 'cellspacing=0' equivalent */}
+.pt-column-menu td {padding: 0; /* 'cellpadding=0' equivalent */}
+.pt-column-hidden-cell {display:none;}
+.pt-header-label {color:#3CB2E2;}
+.pt-column-id, .pt-task-id {width: 50px; text-align: center;}
+.pt-task-data.odd {background-color:#EAFFF5;} .pt-task-data.even {background-color:#E9FFFF;} 
+.pt-task-select {text-align:center; font-size:12px;}
+.pt-task-select .pt-select-div-value {min-width: 50px; min-height: 25px;}
+.pt-task-select .pt-dynamic-select {font-size: 12px; height:24px; line-height: 24px; padding: 0;}
+.pt-task-title {min-width: 200px; font-size: 15px; font-weight: bold;}
+.pt-cell {
+    border-right: 1px solid #CCC; border-radius: 10px; border-bottom: 1px solid #CCC;
+    padding: 5px 5px 0px 10px; line-height: 20px; font-size: 14px;
+}
+
+/* Arrows */
+.pt-no-arrow, .pt-arrow {width:15px; height:15px;}
+.pt-arrow 		{background-image:url('../images/arrows.png');}
+.pt-left-arrow 		{background-position:0px 0px;}
+.pt-left-arrow:hover	{background-position:0px -15px;}
+.pt-right-arrow 	{background-position:15px 0px;}
+.pt-right-arrow:hover	{background-position:15px -15px;}
+
+/* Buttons */
+.pt-add-link {text-decoration:none;}
+.pt-update-buttons {clear:both; margin-left:-10px; margin-top:5px;}
+.pt-menu-button.pt-add-button {vertical-align:top;}
+.pt-button-icon {width:25px; height:25px; border:0px; margin:0px; padding:0px; background-image:url('../images/buttons.png');}
+.pt-main-icon {background-image:url('../images/prototasq.png'); background-size:25px 25px; margin-right:10px;}
+.pt-tick-button		{background-position:0px 0px;}
+.pt-tick-button:hover 	{background-position:0px 25px;}
+.pt-cross-button 	{background-position:-25px 0px;}
+.pt-cross-button:hover	{background-position:-25px 25px;}
+.pt-add-button		{background-position:-50px 0px;}
+.pt-add-button:hover	{background-position:-50px 25px;}
+.pt-minus-button	{background-position:-75px 0px;}
+.pt-minus-button:hover	{background-position:-75px 25px;}
+.pt-settings-button 	{background-position:-100px 0px;}
+.pt-settings-button:hover {background-position:-100px 25px;}
+
+/* WordPress Admin */
+#wpcontent {background-color: #F0F8FF; padding-left:10px; padding-right:10px;}
+#footer-thankyou, #footer-upgrade {display:none;} #wpcontent #pt-selection-form {margin-top:-5px;}
+#TB_ajaxContent {overflow:hidden; padding:0px; margin:0px; border-radius:15px; border:1px solid #999;}
+#TB_window {border-radius:15px;} #TB_closeAjaxWindow .tb-close-icon {color:#EEE;}
+#TB_title {margin-top:-30px; background-color: transparent; color: #FFF; border-bottom: 0px;}
+#TB_load img {width:64px;} #TB_load {padding-top:15px; border-radius:20px !important; background-color:#E9FFFF;} 
